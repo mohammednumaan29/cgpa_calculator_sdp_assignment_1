@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 700px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4e73df;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+input, select {
+    padding: 5px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn {
+    background-color: #36b9cc;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.calc-btn {
+    background-color: #4e73df;
+    color: white;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.result {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 15px;
+    color: #1cc88a;
+}

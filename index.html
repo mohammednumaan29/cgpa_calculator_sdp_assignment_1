@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>CGPA Calculator</h1>
+
+    <table id="gradeTable">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Credits</th>
+                <th>Grade</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td><input type="text" placeholder="Subject Name"></td>
+                <td><input type="number" min="1" class="credit"></td>
+                <td>
+                    <select class="grade">
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                        <option value="0">F</option>
+                    </select>
+                </td>
+                <td><button onclick="removeRow(this)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="add-btn" onclick="addRow()">Add Subject</button>
+
+    <div class="result">
+        <button class="calc-btn" onclick="calculateCGPA()">Calculate CGPA</button>
+        <h2>Your CGPA: <span id="cgpa">0.00</span></h2>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
